@@ -1,0 +1,434 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&family=Nothing+You+Could+Do&family=Quicksand&family=Source+Sans+Pro&display=swap');
+
+*{
+    margin:0px;
+    padding: 0px;
+}
+
+/* main alle sider */
+main{
+  background-color: #AD8E85; /*for de servere, der ikke kan tage gradiant*/
+  height: 1800px;
+  background-image: linear-gradient(#AD8E85, white)
+
+}
+
+h2{
+  font-family:'Quicksand', sans-serif;
+}
+
+h3{
+  font-family: 'inter', sans-serif;
+}
+
+p{
+  font-weight: 'inter', sans-serif;
+}
+
+/**************************************header****************************/
+
+
+      
+   /*TEKST*/
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#AD8E85;
+    height: 100px;
+  }
+  
+  .logo-container {
+    margin-right: auto;
+    width: 200px;
+  }
+  
+  .nav-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 80px;
+
+  }
+  
+        header a{
+            margin-top: 50px;
+            margin-left: 500px;
+            text-decoration: none;
+            color: black;
+            padding: 10px;
+            margin: 20px;
+            font-family: 'quicksand', sans-serif;
+            font-weight: 900;
+
+        }
+
+        header a:hover{
+            color: #7E9181;
+}
+
+
+#logo{
+    
+    margin-bottom: 50px;
+    margin-top: 50px;
+    margin-left: 70px;
+    float: left;
+    width: 150px;
+    
+}
+
+.logo-container:hover{
+    transform: scale(1.2);
+  
+}
+
+#instagram{
+  margin-right: 70px;
+}
+/*****************************DROPDOWNMENU**************************/
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    border-radius: 5px;
+    position: absolute;
+    background-color: #e9dacf;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding-top: 10px;
+    height: fit-content;
+    line-height: 3;
+    padding-bottom: 10px;
+    padding-left: 0px;
+    z-index: 1;
+    text-align: left;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+    padding: 10px; 
+  }
+
+  .dropdown-content a:hover{
+    background-color: #7E9181;
+    color: black;
+    border-radius: 5px;
+  }
+
+/**************************MAIN FORSIDE****************************************/
+
+#main1{
+  height: 700px;
+}
+
+.forside{
+  float: right;
+  margin-right: 300px;
+  margin-top: 200px;
+  z-index: 5;
+}
+
+    .forside h1{
+        color: white;
+        margin-right: 155px;
+        font-family: 'Nothing You Could Do', cursive; 
+        font-size: 40px;
+        padding: 0;
+        background-image: none;
+       
+    }
+
+    .forside h2{
+        color: white;
+        float: right;
+        margin-right: 50px;
+        margin-top: 0px;
+        font-family: 'Inter', sans-serif;
+        font-size: 20px;
+    }
+
+    .forside h1, .forside h2 {
+  opacity: 0; 
+  animation: fade-in 1s ease-in-out forwards; 
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0; 
+  }
+  to {
+    opacity: 1; 
+  }
+}
+
+ /***************************************MAIN HVAD ER YOGA********************************/
+
+ /* billede */
+
+ #zen{
+  float: right;
+  margin-right: 130px;
+  margin-top: 40px;
+  opacity: 70%;
+ }
+
+ /* teskt */
+ .hyoga{
+    width: 500px;
+    margin-left: 100px;
+    margin-top: 40px;
+ }
+
+ .hyoga main{
+    background-color: #EADED5;
+ }
+
+ p{
+    font-family: 'inter', sans-serif;
+    align-content: space-between;
+    line-height: 1.4;
+    
+ }
+
+ h3{
+    font-family: 'inter', sans-serif;
+   
+}
+
+ h1{
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    margin-top: 0;
+    padding: 80px;
+    padding-top: 50px;
+    font-size: 50px;
+    background-image: url(images/blomst.png);
+    color: white;
+ }
+
+
+ /* herunder er videre links til næste artikler */
+
+ .kort{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    padding-left: 100px ;
+    background-color: transparent;
+    padding-right: 100px ;
+    padding-top: 100px;
+    height: 100px;
+  }
+
+  .kort section:hover{
+    background-color: #AD8E85;
+  }
+
+  /* udseende af links */
+  .kort a{
+    font-family: 'quicksand', sans-serif;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    font-size: larger;
+
+  }
+
+  /* Udseende af bokse */
+  .kort section {
+    border: 1px solid #AD8E85;
+    border-radius: 10px;
+    background-color:transparent;
+    text-align: center;
+    width: 300px;
+    padding: 30px;
+    margin-bottom: 5px;
+  }
+
+  /* hvis der skal billede på
+  .placeholder{ 
+    width: 100px;
+    background-color:#AD8E85;
+    height: 100px;
+    padding: 30px;
+  } */
+
+
+  /* *****************************************MAIN YIN YOGA*********************************** */
+
+ 
+  .yind{
+    width:500px;
+    margin-left: 100px;
+    margin-top: 40px;
+  }
+
+  .yinl{
+    margin-left: 100px;
+    width: 500px;
+  }
+
+  .yind h1{
+  text-align: center;  
+  padding: 100px;
+}
+
+  ul{
+    font-family: 'inter', sans-serif;
+    padding-left: 20px;
+    list-style-type: circle;
+  }
+
+  #fødder{
+    float: right;
+    margin-right: 140px;
+    margin-top: 40px;
+    opacity: 70%;
+  }
+
+  .yinm{
+    width: 500px;
+    margin-left: 800px;
+    margin-top: 200px;
+
+  
+  }
+  #engel{
+    float: left;
+    margin-right: 200px;
+    margin-top: 200px;
+    margin-left: 100px;
+    opacity: 80%;
+  }
+
+  .yang a{
+    text-decoration: none;
+    color: black;
+    text-align: center;
+  }
+
+  .yang{
+    margin-top: 100px;
+    margin-left: 550px;
+    border: 1px solid #AD8E85;
+    border-radius: 10px;
+    background-color:transparent;
+    text-align: center;
+    width: fit-content;
+    padding: 30px;
+  }
+  
+
+  /* ********************************************MAIN KOM I GANG***************************** */
+
+
+  .krigerbillede{
+    float: right;
+    margin-right: 20px;
+    opacity: 80%;
+    margin-top: 50px;
+  }
+  
+  .tekstbox{
+    width: 500px;
+    margin-left: 80px;
+    margin-top: 50px;
+  }
+  
+  .tekstbox h1{
+    text-align: left;
+  }
+
+  .tekstbox h2 {
+    font-family:'Quicksand', sans-serif;
+  }
+  
+  .tekstbox p{
+    text-align: left;
+  }
+  
+  .box3 {
+    clear: both;
+    margin: 0 auto;
+    background-color: transparent;
+    margin-bottom: 100px;
+    margin-top: 100px;
+    display: flex;
+    padding: 20px;
+    justify-content: center; 
+    align-items: flex-start; 
+    justify-content: space-between;
+    flex-wrap: wrap; 
+  }
+  
+  .box3 h2 {
+    font-family: 'Quicksand', sans-serif;
+    text-decoration: none;
+    color: black;
+  }
+  
+  .box3 a{
+    text-decoration: none;
+  }
+  
+  .studio {
+    border: 1px solid #AD8E85;
+    border-radius: 10px;
+    background-color: transparent;
+
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 100px;
+    margin-bottom: 0px;
+
+    text-align: left;
+    align-items: center;
+    width: 90%;
+    max-width: 600px;
+    height: 150px;
+    padding: 20px;
+    box-sizing: border-box;
+    flex-basis: 45%;
+  }
+  
+  .box3 .studio:hover{
+    background-color: #AD8E85;
+  }
+  
+  .udstyr{
+    float: right;
+    width: 500px;
+    margin-right: 160px;
+    margin-top: 0px;
+  }
+  .udstyr h2{
+    font-family:'Quicksand', sans-serif;
+  }
+
+  .udstyr ul{
+    padding-left: 20px;
+  }
+
+  #måtte{
+    margin-left: 120px;
+    
+  }
+
+/* *******************************************FOOTER************************************ */
+
+.footer{
+  text-align: center;
+  margin-top: 50px;
+  height: 100px;
+  background-color: transparent;
+  border-top-color:#AD8E85;
+  border-top-width: 2px;
+  border-top-style: solid;
+}
+
