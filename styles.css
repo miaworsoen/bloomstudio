@@ -124,36 +124,51 @@ p{
 /**************************MAIN FORSIDE****************************************/
 
 #main1{
-  height: 700px;
+  height: fit-content;
 }
 
-.forside{
+.forsidebillede {
+  position: relative; 
+  height: 100vh; /* for at det passer til forskellige servere */
+}
+
+.forsidebillede img {
+  position: absolute; /* position gør, så der kan  */
+  top: 0; /* position the image at the top */
+  left: 0; /* position the image at the left */
+  width: 100%; /* set width to 100% */
+  height: 100%; /* set height to 100% */
+  object-fit: cover; /* make sure the image fills the container */
+  opacity: 90%;
+}
+
+
+.forside {
   float: right;
-  margin-right: 300px;
-  margin-top: 200px;
-  z-index: 5;
+  text-align: right;
 }
 
-    .forside h1{
-        color: white;
-        margin-right: 155px;
-        font-family: 'Nothing You Could Do', cursive; 
-        font-size: 40px;
-        padding: 0;
-        background-image: none;
-       
-    }
+.forside h1 {
+  color: white;
+  font-family: 'Nothing You Could Do', cursive; 
+  font-size: 40px;
+  margin-top: 200px;
+  margin-right: 400px;
+  padding: 0;
+  background-image: none;
+  font-size: 60px;
+}
 
-    .forside h2{
-        color: white;
-        float: right;
-        margin-right: 50px;
-        margin-top: 0px;
-        font-family: 'Inter', sans-serif;
-        font-size: 20px;
-    }
+.forside h2 {
+  color: white;
+  margin-right: 300px;
+  float: right;
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  font-size: 25px;
+}
 
-    .forside h1, .forside h2 {
+.forside h1, .forside h2 {
   opacity: 0; 
   animation: fade-in 1s ease-in-out forwards; 
 }
@@ -166,6 +181,7 @@ p{
     opacity: 1; 
   }
 }
+
 
  /***************************************MAIN HVAD ER YOGA********************************/
 
